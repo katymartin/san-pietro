@@ -1,5 +1,11 @@
 {
   "current": {
+    "brand_color_1": "#ffffff",
+    "brand_color_2": "#fdfbf7",
+    "brand_color_3": "#f4ecd7",
+    "brand_color_4": "#ea614b",
+    "brand_color_5": "#565353",
+    "brand_color_6": "#272322",
     "colors_solid_button_labels": "#272322",
     "colors_accent_1": "#ea614b",
     "gradient_accent_1": "",
