@@ -1,0 +1,16 @@
+{% liquid
+    case section.settings.product_img_orientation
+      when 'square'
+        assign product_img_width = 120
+        assign product_img_height = 120
+        
+      when 'landscape'
+        assign product_img_width = 150
+        assign product_img_height = 480
+        
+      when 'portrait'
+        assign product_img_width = 120
+        assign product_img_height = 150
+        
+      endcase
+  %}
