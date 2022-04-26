@@ -22,16 +22,23 @@
             "text_style": "subtitle"
           }
         },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
         "801f5d97-e17c-4df0-82a1-6047cb5f92eb": {
           "type": "text",
           "settings": {
             "text": "{{ product.metafields.my_fields.flavor_profiles | metafield_text }}",
-            "text_style": "uppercase"
+            "text_style": "flavor-profiles"
           }
         },
-        "price": {
-          "type": "price",
+        "0bd9903e-96d8-4f95-b561-df3529ea1fa3": {
+          "type": "text",
           "settings": {
+            "text": "{{ product.metafields.my_fields.pairs_with | metafield_text }}",
+            "text_style": "pairs-with"
           }
         },
         "variant_picker": {
@@ -70,8 +77,9 @@
         "vendor",
         "title",
         "caption",
-        "801f5d97-e17c-4df0-82a1-6047cb5f92eb",
         "price",
+        "801f5d97-e17c-4df0-82a1-6047cb5f92eb",
+        "0bd9903e-96d8-4f95-b561-df3529ea1fa3",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
