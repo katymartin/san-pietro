@@ -12,6 +12,46 @@
     "settings": [
       {
         "type": "header",
+        "content": "Brand Colors"
+      },
+      {
+        "type": "color",
+        "id": "brand_color_1",
+        "default": "#fff",
+        "label": "Brand Color 1"
+      },
+      {
+        "type": "color",
+        "id": "brand_color_2",
+        "default": "#fff",
+        "label": "Brand Color 2"
+      },
+      {
+        "type": "color",
+        "id": "brand_color_3",
+        "default": "#fff",
+        "label": "Brand Color 3"
+      },
+      {
+        "type": "color",
+        "id": "brand_color_4",
+        "default": "#fff",
+        "label": "Brand Color 4"
+      },
+      {
+        "type": "color",
+        "id": "brand_color_5",
+        "default": "#fff",
+        "label": "Brand Color 5"
+      },
+      {
+        "type": "color",
+        "id": "brand_color_6",
+        "default": "#fff",
+        "label": "Brand Color 6"
+      },
+      {
+        "type": "header",
         "content": "t:settings_schema.colors.settings.header__1.content"
       },
       {

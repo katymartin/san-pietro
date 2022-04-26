@@ -1529,6 +1529,12 @@
               },
               "options__3": {
                 "label": "Uppercase"
+              },
+              "options__4": {
+                "label": "Flavor Profiles"
+              },
+              "options__5": {
+                "label": "Pairs With"
               }
             }
           }
