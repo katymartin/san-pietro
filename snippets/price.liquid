@@ -30,6 +30,18 @@
   endif
 -%}
 
+{% assign product_qty = 0 %}
+{% for variant in product.variants %}
+{% if variant.inventory_quantity > 0 %}
+{% assign product_qty = product_qty | plus: variant.inventory_quantity %}
+{% endif %}
+{% endfor %}
+{% if product_qty < 5 %}
+<div class="sale--price caption-with-letter-spacing--medium">          
+  <p>Only <span class="sd-count"><strong>{{ product_qty }}</strong></span> left</p>
+</div>
+{% endif %}
+
 <div class="price
   {%- if price_class %} {{ price_class }}{% endif -%}
   {%- if available == false %} price--sold-out {% endif -%}
