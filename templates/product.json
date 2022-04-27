@@ -9,13 +9,6 @@
             "product_badging": "{{ product.metafields.my_fields.custom_badging.value }}"
           }
         },
-        "vendor": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
         "title": {
           "type": "title",
           "settings": {
@@ -81,7 +74,6 @@
       },
       "block_order": [
         "db467a64-1377-4bbc-b10b-22e313a6d663",
-        "vendor",
         "title",
         "caption",
         "price",
