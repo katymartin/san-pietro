@@ -501,21 +501,39 @@ blockquote {
   letter-spacing: 0.18rem;
 }
 
-.flavor-profiles {
-  background-color: rgb(var(--color-brand-5));
-  color: rgb(var(--color-brand-1));
+
+
+@media screen and (min-width: 749px) {
+  .badge-container {
+    width: 200px;
+    position: absolute;
+    top: -10px;
+    left: -275px;
+    z-index: 989;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.flavor-profiles, .pairs-with {
   border-radius: 50px;
   padding: 2px 12px;
   width: fit-content;
   margin: 10px 0 20px 0 !important;
 }
 
+.flavor-profiles {
+  background-color: rgb(var(--color-brand-5));
+  color: rgb(var(--color-brand-1));
+}
+
 .pairs-with {
   background-color: rgb(var(--color-brand-3));
-  border-radius: 50px;
-  padding: 2px 12px;
-  width: fit-content;
-  margin: 10px 0 20px 0 !important;
+}
+
+.custom--badge {
+  background-color: rgb(var(--color-brand-5)) !important;
+  color: rgb(var(--color-brand-1)) !important;
 }
 
 .caption-large,

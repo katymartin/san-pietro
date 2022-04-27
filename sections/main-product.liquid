@@ -200,6 +200,14 @@
           {%- case block.type -%}
           {%- when '@app' -%}
             {% render block %}
+            
+          {%- when 'productbadging' -%}
+            {% if block.settings.product_badging != blank %}
+            <div class="badge-container">
+              <p class="badge custom--badge">{{- block.settings.product_badging -}}</p>
+            </div>
+            {% endif %}
+          
           {%- when 'text' -%}
           
             {% if block.settings.text_style == 'flavor-profiles' and block.settings.text != blank %}
@@ -753,6 +761,18 @@
         {
           "type": "paragraph",
           "content": "t:sections.main-product.blocks.share.settings.title_info.content"
+        }
+      ]
+    },
+    {
+      "type": "productbadging",
+      "name": "Product Badging",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "product_badging",
+          "label": "t:sections.main-product.blocks.share.settings.text.label"
         }
       ]
     },
