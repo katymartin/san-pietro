@@ -29,7 +29,8 @@
                 card_product: block.settings.product,
                 media_aspect_ratio: 'adapt',
                 product_image_alt: block.settings.product_image_alt,
-                product_title_alt: block.settings.product_title_alt
+                product_title_alt: block.settings.product_title_alt,
+                product_image_size: block.settings.product_image_size
               %}
             {%- when 'collection' -%}
               {% render 'card-collection',
@@ -150,6 +151,16 @@
           "type": "image_picker",
           "id": "product_image_alt",
           "label": "Alternate Product Image"
+        },
+        {
+            "type": "range",
+            "id": "product_image_size",
+            "min": 40,
+            "max": 150,
+            "step": 5,
+            "unit": "px", // this adds the px label to the admin but not the value
+            "label": "Image size",
+            "default": 100 // has to be a number available to step range, so in this case divisible by 5 & not bigger than 100
         }
       ]
     },
