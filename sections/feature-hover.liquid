@@ -1,6 +1,5 @@
 {{ 'feature-hover.css' | asset_url | stylesheet_tag }}
-{{ 'component-card.css' | asset_url | stylesheet_tag }}
-{{ 'component-price.css' | asset_url | stylesheet_tag }}
+
 
 {%- style -%}
   .section-{{ section.id }}-padding {
@@ -18,19 +17,19 @@
 
 <link rel="stylesheet" href="{{ 'component-deferred-media.css' | asset_url }}" media="print" onload="this.media='all'">
 
-<div class="color-{{ section.settings.color_scheme }} gradient isolate">
+<div class="color-{{ section.settings.color_scheme }}">
   <div class="page-width{% if section.settings.heading == blank %} no-heading{% endif %} section-{{ section.id }}-padding">
     <h2 class="feature-hover-wrapper-title {{ section.settings.heading_size }}">{{ section.settings.heading | escape }}</h2>
-    <div class="">
+    <div class="feature-hover">
       {%- for block in section.blocks -%}
-        <div class="feature-hover__item feature-hover__item--{{ block.type }}" {{ block.shopify_attributes }}>
+        <div class="feature-hover__item" {{ block.shopify_attributes }}>
           {%- case block.type -%}
             {%- when 'product' -%}
-              {% render 'card-product',
+              {% render 'card-simple-product',
                 card_product: block.settings.product,
                 media_aspect_ratio: 'adapt',
-                show_secondary_image: block.settings.second_image,
-                extend_height: true
+                product_image_alt: block.settings.product_image_alt,
+                product_title_alt: block.settings.product_title_alt
               %}
             {%- when 'collection' -%}
               {% render 'card-collection',
@@ -141,6 +140,16 @@
           "type": "product",
           "id": "product",
           "label": "Select Product"
+        },
+        {
+           "type": "text",
+           "id": "product_title_alt",
+           "label": "Alternate Product Title"
+        },
+        {
+          "type": "image_picker",
+          "id": "product_image_alt",
+          "label": "Alternate Product Image"
         }
       ]
     },

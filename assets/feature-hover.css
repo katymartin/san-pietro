@@ -7,6 +7,6 @@
   display: flex;
 }
 
-.feature-hover__item > * {
-  width: 100%;
+.feature-hover__item {
+  width: 300px;
 }
