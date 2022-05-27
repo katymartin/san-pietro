@@ -8,19 +8,75 @@
   height: 400px;
   display: flex;
   align-items: flex-end;
-}
-
-
-.feature-hover {
-  display: flex;
-}
-
-.feature-hover__item {
-  width: 300px;
+  flex-wrap: nowrap;
 }
 
 .featured-bottle {
   height: auto;
-  margin: 15px 0 30px 0;
+  margin: 15px 0 0 0;
   display: block;
+  position: relative;
+  bottom: 0;
+  transition: bottom .3s ease-in-out;
+}
+
+.expanding-div {
+  background-color: rgb(var(--color-brand-4));
+  width: 2px;
+  height: 0px;
+  margin-left: -40px;
+  display: block !important;
+  position: relative;
+  bottom: -30px;
+  transition-delay: .1s;
+  transition: height .3s ease-in-out, bottom .3s ease-in-out;
+}
+
+.card-simple-info {
+  display: flex;
+  flex-direction: column;
+  filter: blur(5px);
+  position: relative;
+  bottom: -30px;
+  opacity: 0;
+  transition: bottom .3s ease-in-out, opacity .3s ease-in-out, blur .3s ease-in-out;
+}
+
+.feature-hover__item:hover .expanding-div {
+  bottom: 0px;
+  height: 60px;
+}
+
+.feature-hover__item:hover .featured-bottle {
+  bottom: 70px;
+}
+
+.feature-hover__item:hover .card-simple-info{
+  bottom: 0px;
+  opacity: 1;
+  filter: blur(0px);
+}
+
+.feature-hover {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.feature-hover__item {
+  width: 100%;
+  max-width: 200px;
+}
+
+.card-simple-title {
+  margin-bottom: 10px;
+}
+
+.card-simple-title a {
+  color: rgb(var(--color-brand-6));
+  text-decoration: none;
+}
+
+.color-inverse .card-simple-title a {
+  color: rgb(var(--color-brand-2));
 }

@@ -27,17 +27,16 @@
             {%- when 'product' -%}
               {% render 'card-simple-product',
                 card_product: block.settings.product,
-                media_aspect_ratio: 'adapt',
                 product_image_alt: block.settings.product_image_alt,
                 product_title_alt: block.settings.product_title_alt,
                 product_image_size: block.settings.product_image_size
               %}
-            {%- when 'collection' -%}
-              {% render 'card-collection',
+            {%- when 'inline-ad' -%}
+              {% render 'inline-ad',
                 card_collection: block.settings.collection,
-                media_aspect_ratio: 'adapt',
-                columns: 2,
-                extend_height: true
+                inline_ad_headline: block.settings.inline_ad_headline,
+                inline_ad_link: block.settings.inline_ad_link,
+                inline_ad_image: block.settings.inline_ad_image,
               %}
           {%- endcase -%}
         </div>
@@ -165,14 +164,24 @@
       ]
     },
     {
-      "type": "collection",
-      "name": "Collection",
+      "type": "inline-ad",
+      "name": "Inline Ad",
       "settings": [
-        {
-          "type": "collection",
-          "id": "collection",
-          "label": "Select Collection"
-        }
+      {
+         "type": "text",
+         "id": "inline_ad_headline",
+         "label": "Ad Headline"
+      },
+      {
+         "type": "text",
+         "id": "inline_ad_link",
+         "label": "Ad Link"
+      },
+      {
+        "type": "image_picker",
+        "id": "inline_ad_image",
+        "label": "Ad Image"
+      },
       ]
     }
   ],
@@ -185,7 +194,7 @@
           "type": "product"
         },
         {
-          "type": "collection"
+          "type": "inline-ad"
         }
       ]
     }

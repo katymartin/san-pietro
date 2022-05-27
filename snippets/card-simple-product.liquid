@@ -17,52 +17,23 @@
 {% endcomment %}
 <div>
 {%- if card_product and card_product != empty -%}
-  {%- liquid
-    assign ratio = 1
-    if card_product.featured_media and media_aspect_ratio == 'adapt'
-      assign ratio = card_product.featured_media.aspect_ratio
-    endif
-    if ratio == 0 or ratio == nil
-      assign ratio = 1
-    endif
-  -%}
   
   {%- if product_image_alt -%}
   <div class="hover-image-wrapper">
     <a href="{{ card_product.url }}">
-  <img
-    srcset="{{ product_image_alt | image_url }}"
-    src="{{ card_product.featured_media | image_url: width: 533 }}"
-    sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
-    alt="{{ card_product.featured_media.alt | escape }}"
-    class="motion-reduce featured-bottle"
-    {% unless lazy_load == false %}loading="lazy"{% endunless %}
-    style="max-width: {{ product_image_size | append: "px" }};"
-    width="100%"
-  >
-</a>
-</div>
-  {%- elsif card_product.featured_media -%}
-  <div class="hover-image-wrapper">
-    <a href="{{ card_product.url }}">
-      <img
-            srcset="{%- if card_product.featured_media.width >= 165 -%}{{ card_product.featured_media | image_url: width: 165 }} 165w,{%- endif -%}
-              {%- if card_product.featured_media.width >= 360 -%}{{ card_product.featured_media | image_url: width: 360 }} 360w,{%- endif -%}
-              {%- if card_product.featured_media.width >= 533 -%}{{ card_product.featured_media | image_url: width: 533 }} 533w,{%- endif -%}
-              {%- if card_product.featured_media.width >= 720 -%}{{ card_product.featured_media | image_url: width: 720 }} 720w,{%- endif -%}
-              {%- if card_product.featured_media.width >= 940 -%}{{ card_product.featured_media | image_url: width: 940 }} 940w,{%- endif -%}
-              {%- if card_product.featured_media.width >= 1066 -%}{{ card_product.featured_media | image_url: width: 1066 }} 1066w,{%- endif -%}
-              {{ card_product.featured_media | image_url }} {{ card_product.featured_media.width }}w"
-            sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
-            alt="{{ card_product.featured_media.alt | escape }}"
-            class="motion-reduce featured-bottle"
-            {% unless lazy_load == false %}loading="lazy"{% endunless %}
-            style="max-width: {{ product_image_size | append: "px" }};"
-            width="100%"
-          >
-          {% comment %}theme-check-enable ImgLazyLoading{% endcomment %}
-        </a>
-        </div>
+    <img
+      srcset="{{ product_image_alt | image_url }}"
+      src="{{ card_product.featured_media | image_url: width: 533 }}"
+      sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
+      alt="{{ card_product.featured_media.alt | escape }}"
+      class="motion-reduce featured-bottle"
+      {% unless lazy_load == false %}loading="lazy"{% endunless %}
+      style="max-width: {{ product_image_size | append: "px" }};"
+      width="100%"
+    >
+    </a>
+    <div class="expanding-div"></div>
+  </div>
   {%- endif -%}
 
   
@@ -74,25 +45,22 @@
     {%- endif -%}
     
     {%- if product_title_alt != empty -%}
-    <h3 class="card-simple-title">
+    <h2 class="card-simple-title">
       <a href="{{ card_product.url }}">
         {{ product_title_alt }}
       </a>
-    </h3>
+    </h2>
     {%- else -%}
-    <h3 class="card-simple-title">
+    <h2 class="card-simple-title">
       <a href="{{ card_product.url }}">
         {{ card_product.title | escape }}
       </a>
-    </h3>
+    </h2>
     {%- endif -%}
-    
-      {{ card_product.price | money }}
+    {{ card_product.price | money }}
       
-      <button>
+    <a class="underlined-link" href="{{ card_product.url }}">Shop Now</a>
   </div>
-
-
 
 {%- endif -%}
 </div>
