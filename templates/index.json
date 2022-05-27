@@ -208,14 +208,14 @@
     "featured-collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Best Sellers",
+        "title": "Popular Right Now",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
         "description_style": "body",
         "collection": "best-sellers",
         "products_to_show": 12,
-        "columns_desktop": 4,
+        "columns_desktop": 2,
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
