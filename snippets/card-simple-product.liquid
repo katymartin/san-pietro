@@ -29,6 +29,7 @@
       class="motion-reduce featured-bottle"
       {% unless lazy_load == false %}loading="lazy"{% endunless %}
       width="100%"
+      style="max-width: {{ product_image_size | append: "px" }};"
     >
     </a>
     <div class="expanding-div"></div>
@@ -63,16 +64,3 @@
 
 {%- endif -%}
 </div>
-
-
-<style>
-  .featured-bottle {
-    max-width: calc({{ product_image_size | append: "px" }} - 10px);
-  }
-  
-  @media screen and (min-width: 1020px) {
-    .featured-bottle {
-      max-width: {{ product_image_size | append: "px" }};
-    }
-  }  
-</style>
