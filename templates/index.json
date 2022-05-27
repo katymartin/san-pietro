@@ -333,19 +333,12 @@
           "settings": {
             "collection": "bourbon"
           }
-        },
-        "676e7b98-fa34-4d62-a435-c9de9f786d9e": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
-          }
         }
       },
       "block_order": [
         "collection-1",
         "collection-0",
-        "collection-2",
-        "676e7b98-fa34-4d62-a435-c9de9f786d9e"
+        "collection-2"
       ],
       "settings": {
         "title": "",
