@@ -157,7 +157,7 @@
           "settings": {
             "color_scheme_headline": "default-headline",
             "inline_ad_headline": "Best Summer Rosé",
-            "inline_ad_link": "",
+            "inline_ad_link": "shopify:\/\/collections\/sparkling-rose",
             "inline_ad_image": "shopify:\/\/shop_images\/smaller_micheile-dot-com-j4hsN4l3BM0-unsplash.jpg",
             "inline_ad_type": "two-ads-left"
           }
@@ -176,7 +176,7 @@
           "settings": {
             "color_scheme_headline": "default-headline",
             "inline_ad_headline": "Gin Fizz Anyone?",
-            "inline_ad_link": "",
+            "inline_ad_link": "shopify:\/\/collections\/gin",
             "inline_ad_image": "shopify:\/\/shop_images\/smaller_gaby-yerden-3x2cFCoBeEQ-unsplash_0da6b717-7e49-469e-8221-d078d080e211.png",
             "inline_ad_type": "two-ads-right"
           }
@@ -198,7 +198,7 @@
         "dc533856-71f9-44a1-8d79-af5a93a80b90"
       ],
       "settings": {
-        "color_scheme": "background-1",
+        "color_scheme": "default",
         "padding_top": 64,
         "padding_bottom": 64
       }
