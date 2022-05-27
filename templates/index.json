@@ -200,7 +200,7 @@
       "settings": {
         "color_scheme": "default",
         "padding_top": 64,
-        "padding_bottom": 64
+        "padding_bottom": 0
       }
     },
     "featured-collection": {
