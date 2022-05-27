@@ -54,6 +54,7 @@
         "16536193833ddca87c-1": {
           "type": "inline-ad",
           "settings": {
+            "color_scheme_headline": "inverse-headline",
             "inline_ad_headline": "Most Popular",
             "inline_ad_link": "",
             "inline_ad_image": "shopify:\/\/shop_images\/ash.jpg",
@@ -115,9 +116,7 @@
         "e429b401-b344-4884-b4c9-f4a0cde4f518"
       ],
       "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "color_scheme": "background-1",
+        "color_scheme": "default",
         "padding_top": 56,
         "padding_bottom": 56
       }
@@ -156,6 +155,7 @@
         "16536635670b0cc719-1": {
           "type": "inline-ad",
           "settings": {
+            "color_scheme_headline": "default-headline",
             "inline_ad_headline": "Best Summer Rosé",
             "inline_ad_link": "",
             "inline_ad_image": "shopify:\/\/shop_images\/smaller_micheile-dot-com-j4hsN4l3BM0-unsplash.jpg",
@@ -174,6 +174,7 @@
         "c763bd01-8d3c-4839-ad65-99c74048be01": {
           "type": "inline-ad",
           "settings": {
+            "color_scheme_headline": "default-headline",
             "inline_ad_headline": "Gin Fizz Anyone?",
             "inline_ad_link": "",
             "inline_ad_image": "shopify:\/\/shop_images\/smaller_gaby-yerden-3x2cFCoBeEQ-unsplash_0da6b717-7e49-469e-8221-d078d080e211.png",
@@ -197,8 +198,6 @@
         "dc533856-71f9-44a1-8d79-af5a93a80b90"
       ],
       "settings": {
-        "heading": "",
-        "heading_size": "h1",
         "color_scheme": "background-1",
         "padding_top": 64,
         "padding_bottom": 64
