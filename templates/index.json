@@ -150,6 +150,40 @@
         "padding_bottom": 52
       }
     },
+    "165366356785fa2356": {
+      "type": "feature-hover",
+      "blocks": {
+        "16536635670b0cc719-1": {
+          "type": "inline-ad",
+          "settings": {
+            "inline_ad_headline": "Best Summer Rosé",
+            "inline_ad_link": "",
+            "inline_ad_image": "shopify:\/\/shop_images\/smaller_micheile-dot-com-j4hsN4l3BM0-unsplash.jpg",
+            "inline_ad_type": "two-ads-left"
+          }
+        },
+        "16536635670b0cc719-0": {
+          "type": "product",
+          "settings": {
+            "product": "19-crimes-shiraz",
+            "product_title_alt": "",
+            "product_image_alt": "shopify:\/\/shop_images\/josh-cabernet-sauvignon.png",
+            "product_image_size": 70
+          }
+        }
+      },
+      "block_order": [
+        "16536635670b0cc719-1",
+        "16536635670b0cc719-0"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "color_scheme": "background-1",
+        "padding_top": 56,
+        "padding_bottom": 56
+      }
+    },
     "featured-collection": {
       "type": "featured-collection",
       "settings": {
@@ -175,40 +209,6 @@
         "swipe_on_mobile": true,
         "padding_top": 56,
         "padding_bottom": 0
-      }
-    },
-    "165366356785fa2356": {
-      "type": "feature-hover",
-      "blocks": {
-        "16536635670b0cc719-1": {
-          "type": "inline-ad",
-          "settings": {
-            "inline_ad_headline": "HIII",
-            "inline_ad_link": "",
-            "inline_ad_image": "shopify:\/\/shop_images\/ash.jpg",
-            "inline_ad_type": "only-ad"
-          }
-        },
-        "16536635670b0cc719-0": {
-          "type": "product",
-          "settings": {
-            "product": "19-crimes-shiraz",
-            "product_title_alt": "",
-            "product_image_alt": "shopify:\/\/shop_images\/josh-cabernet-sauvignon.png",
-            "product_image_size": 70
-          }
-        }
-      },
-      "block_order": [
-        "16536635670b0cc719-1",
-        "16536635670b0cc719-0"
-      ],
-      "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "color_scheme": "background-1",
-        "padding_top": 56,
-        "padding_bottom": 56
       }
     },
     "collage": {
@@ -344,8 +344,8 @@
     "16509101518f096d1b",
     "16536193836b610bba",
     "rich-text",
-    "featured-collection",
     "165366356785fa2356",
+    "featured-collection",
     "collage",
     "image-with-text",
     "collection-list"
