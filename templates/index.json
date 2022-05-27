@@ -170,11 +170,21 @@
             "product_image_alt": "shopify:\/\/shop_images\/the-little-sheep-of-france-rose.png",
             "product_image_size": 95
           }
+        },
+        "c763bd01-8d3c-4839-ad65-99c74048be01": {
+          "type": "inline-ad",
+          "settings": {
+            "inline_ad_headline": "Gin Fizz Anyone?",
+            "inline_ad_link": "",
+            "inline_ad_image": "shopify:\/\/shop_images\/smaller_gaby-yerden-3x2cFCoBeEQ-unsplash.png",
+            "inline_ad_type": "two-ads-right"
+          }
         }
       },
       "block_order": [
         "16536635670b0cc719-1",
-        "16536635670b0cc719-0"
+        "16536635670b0cc719-0",
+        "c763bd01-8d3c-4839-ad65-99c74048be01"
       ],
       "settings": {
         "heading": "",
