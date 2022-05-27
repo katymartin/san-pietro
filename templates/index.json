@@ -56,7 +56,8 @@
           "settings": {
             "inline_ad_headline": "Most Popular",
             "inline_ad_link": "",
-            "inline_ad_image": "shopify:\/\/shop_images\/ash.jpg"
+            "inline_ad_image": "shopify:\/\/shop_images\/ash.jpg",
+            "inline_ad_type": "only-ad"
           }
         },
         "16536193833ddca87c-0": {
@@ -65,7 +66,7 @@
             "product": "kim-crawford-sauvignon-blanc",
             "product_title_alt": "",
             "product_image_alt": "shopify:\/\/shop_images\/kim-crawford-sauvignon-blanc.png",
-            "product_image_size": 100
+            "product_image_size": 125
           }
         },
         "035c0c53-5dd4-4dab-af00-35a9673b9b32": {
@@ -74,7 +75,7 @@
             "product": "josh-cellars-cabernet-sauvignon",
             "product_title_alt": "",
             "product_image_alt": "shopify:\/\/shop_images\/josh-cabernet-sauvignon.png",
-            "product_image_size": 90
+            "product_image_size": 85
           }
         },
         "bccdb61d-59c1-4aa6-86eb-7859fda3e50d": {
@@ -174,6 +175,38 @@
         "swipe_on_mobile": true,
         "padding_top": 56,
         "padding_bottom": 0
+      }
+    },
+    "165366356785fa2356": {
+      "type": "feature-hover",
+      "blocks": {
+        "16536635670b0cc719-1": {
+          "type": "inline-ad",
+          "settings": {
+            "inline_ad_headline": "",
+            "inline_ad_link": "",
+            "inline_ad_type": "only-ad"
+          }
+        },
+        "16536635670b0cc719-0": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "product_title_alt": "",
+            "product_image_size": 100
+          }
+        }
+      },
+      "block_order": [
+        "16536635670b0cc719-1",
+        "16536635670b0cc719-0"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "color_scheme": "background-1",
+        "padding_top": 56,
+        "padding_bottom": 56
       }
     },
     "collage": {
@@ -310,6 +343,7 @@
     "16536193836b610bba",
     "rich-text",
     "featured-collection",
+    "165366356785fa2356",
     "collage",
     "image-with-text",
     "collection-list"
