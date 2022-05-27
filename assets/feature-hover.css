@@ -1,5 +1,6 @@
 .page-width.feature-hover-width {
-  padding: 0px !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
 }
 
 .feature-hover {
@@ -17,15 +18,23 @@
   margin: 0 15px;
 }
  
-.feature-hover::-webkit-scrollbar-track {
-  background: rgb(var(--color-brand-2));
-}
  
 .feature-hover::-webkit-scrollbar-thumb {
   height: 4px;
   border-radius: 50px;
-  background: rgb(var(--color-brand-6));
   margin: 0 15px;
+}
+
+.color-default .feature-hover::-webkit-scrollbar-track {
+  background: rgb(var(--color-brand-2));
+}
+
+.color-inverse .feature-hover::-webkit-scrollbar-track {
+  background: rgb(var(--color-brand-6));
+}
+
+.feature-hover::-webkit-scrollbar-thumb {
+  background: rgb(var(--color-brand-5));
 }
 
 .feature-hover__item {
@@ -39,7 +48,7 @@
 @media screen and (min-width: 1365px) {
   .feature-hover__item {
     max-width: 250px;
-    margin-bottom: 0;
+    margin-bottom: 30px;
     padding: 0;
   }
 }
@@ -128,8 +137,11 @@
 }
 
 .card-simple-title a {
-  color: rgb(var(--color-brand-6));
   text-decoration: none;
+}
+
+.color-default .card-simple-title a {
+  color: rgb(var(--color-brand-6));
 }
 
 .color-inverse .card-simple-title a {
@@ -200,9 +212,17 @@
 }
 
 .inline-ad-headline {
-  background-color: rgb(var(--color-brand-6));
-  color: rgb(var(--color-brand-2));
   border-radius: var(--text-boxes-radius);
   padding: 10px 20px;
   margin: 0;
+}
+
+.color-default .inline-ad-headline {
+  background-color: rgb(var(--color-brand-2));
+  color: rgb(var(--color-brand-6));
+}
+
+.color-inverse .inline-ad-headline {
+  background-color: rgb(var(--color-brand-6));
+  color: rgb(var(--color-brand-2));
 }
