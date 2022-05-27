@@ -28,7 +28,6 @@
       alt="{{ card_product.featured_media.alt | escape }}"
       class="motion-reduce featured-bottle"
       {% unless lazy_load == false %}loading="lazy"{% endunless %}
-      style="max-width: {{ product_image_size | append: "px" }};"
       width="100%"
     >
     </a>
@@ -64,3 +63,16 @@
 
 {%- endif -%}
 </div>
+
+
+<style>
+  .featured-bottle {
+    max-width: calc({{ product_image_size | append: "px" }} - 10px);
+  }
+  
+  @media screen and (min-width: 1020px) {
+    .featured-bottle {
+      max-width: {{ product_image_size | append: "px" }};
+    }
+  }  
+</style>
