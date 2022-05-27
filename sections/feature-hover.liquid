@@ -20,9 +20,8 @@
 <div class="color-{{ section.settings.color_scheme }}">
   <div class="page-width{% if section.settings.heading == blank %} no-heading{% endif %} section-{{ section.id }}-padding">
     <h2 class="feature-hover-wrapper-title {{ section.settings.heading_size }}">{{ section.settings.heading | escape }}</h2>
-    <div class="feature-hover">
+    <div class="feature-hover" {{ block.shopify_attributes }}>
       {%- for block in section.blocks -%}
-        <div class="feature-hover__item" {{ block.shopify_attributes }}>
           {%- case block.type -%}
             {%- when 'product' -%}
               {% render 'card-simple-product',
@@ -33,13 +32,11 @@
               %}
             {%- when 'inline-ad' -%}
               {% render 'inline-ad',
-                card_collection: block.settings.collection,
                 inline_ad_headline: block.settings.inline_ad_headline,
                 inline_ad_link: block.settings.inline_ad_link,
-                inline_ad_image: block.settings.inline_ad_image,
+                inline_ad_image: block.settings.inline_ad_image
               %}
           {%- endcase -%}
-        </div>
       {%- endfor -%}
     </div>
   </div>
@@ -173,15 +170,15 @@
          "label": "Ad Headline"
       },
       {
-         "type": "text",
-         "id": "inline_ad_link",
-         "label": "Ad Link"
+      	"type": "url",  
+        "id": "inline_ad_link",
+        "label": "Ad Link"
       },
       {
         "type": "image_picker",
         "id": "inline_ad_image",
         "label": "Ad Image"
-      },
+      }
       ]
     }
   ],
