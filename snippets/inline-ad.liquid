@@ -17,7 +17,7 @@
 {% endcomment %}
 
 {%- if inline_ad_image -%}
-<div class="inline-ad-wrapper {{ inline_ad_type }}">  
+<div class="inline-ad-wrapper {{ inline_ad_type }} color-{{ color_scheme_headline }}">  
   {%- if inline_ad_link -%}
     <a href="{{ inline_ad_link }}">
       <div class="inline-ad-image" style="background-image: url({{ inline_ad_image | image_url }}); ">

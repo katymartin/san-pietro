@@ -19,8 +19,7 @@
 <link rel="stylesheet" href="{{ 'component-deferred-media.css' | asset_url }}" media="print" onload="this.media='all'">
 
 <div class="color-{{ section.settings.color_scheme }}">
-  <div class="page-width{% if section.settings.heading == blank %} no-heading{% endif %} section-{{ section.id }}-padding feature-hover-width">
-    <h2 class="feature-hover-wrapper-title {{ section.settings.heading_size }}">{{ section.settings.heading | escape }}</h2>
+  <div class="page-width section-{{ section.id }}-padding feature-hover-width">
     <div class="feature-hover" {{ block.shopify_attributes }}>
       {%- for block in section.blocks -%}
           {%- case block.type -%}
@@ -36,7 +35,8 @@
                 inline_ad_headline: block.settings.inline_ad_headline,
                 inline_ad_link: block.settings.inline_ad_link,
                 inline_ad_image: block.settings.inline_ad_image,
-                inline_ad_type: block.settings.inline_ad_type
+                inline_ad_type: block.settings.inline_ad_type,
+                color_scheme_headline: block.settings.color_scheme_headline
               %}
           {%- endcase -%}
       {%- endfor -%}
@@ -51,59 +51,20 @@
   "class": "section",
   "settings": [
     {
-      "type": "text",
-      "id": "heading",
-      "default": "Feature Hover",
-      "label": "Feature Hover"
-    },
-    {
-      "type": "select",
-      "id": "heading_size",
-      "options": [
-        {
-          "value": "h2",
-          "label": "t:sections.all.heading_size.options__1.label"
-        },
-        {
-          "value": "h1",
-          "label": "t:sections.all.heading_size.options__2.label"
-        },
-        {
-          "value": "h0",
-          "label": "t:sections.all.heading_size.options__3.label"
-        }
-      ],
-      "default": "h1",
-      "label": "t:sections.all.heading_size.label"
-    },
-    {
       "type": "select",
       "id": "color_scheme",
       "options": [
         {
-          "value": "accent-1",
-          "label": "t:sections.all.colors.accent_1.label"
-        },
-        {
-          "value": "accent-2",
-          "label": "t:sections.all.colors.accent_2.label"
-        },
-        {
-          "value": "background-1",
-          "label": "t:sections.all.colors.background_1.label"
-        },
-        {
-          "value": "background-2",
-          "label": "t:sections.all.colors.background_2.label"
+          "value": "default",
+          "label": "Default"
         },
         {
           "value": "inverse",
-          "label": "t:sections.all.colors.inverse.label"
+          "label": "Inverse"
         }
       ],
-      "default": "background-1",
-      "label": "t:sections.all.colors.label",
-      "info": "t:sections.all.colors.has_cards_info"
+      "default": "default",
+      "label": "Default"
     },
     {
       "type": "header",
@@ -166,6 +127,22 @@
       "type": "inline-ad",
       "name": "Inline Ad",
       "settings": [
+      {
+        "type": "select",
+        "id": "color_scheme_headline",
+        "options": [
+          {
+            "value": "default",
+            "label": "Default"
+          },
+          {
+            "value": "inverse",
+            "label": "Inverse"
+          }
+        ],
+        "default": "default",
+        "label": "Default"
+      },
       {
          "type": "text",
          "id": "inline_ad_headline",
