@@ -183,17 +183,19 @@
         "16536635670b0cc719-1": {
           "type": "inline-ad",
           "settings": {
-            "inline_ad_headline": "",
+            "inline_ad_headline": "HIII",
             "inline_ad_link": "",
+            "inline_ad_image": "shopify:\/\/shop_images\/ash.jpg",
             "inline_ad_type": "only-ad"
           }
         },
         "16536635670b0cc719-0": {
           "type": "product",
           "settings": {
-            "product": "",
+            "product": "19-crimes-shiraz",
             "product_title_alt": "",
-            "product_image_size": 100
+            "product_image_alt": "shopify:\/\/shop_images\/josh-cabernet-sauvignon.png",
+            "product_image_size": 70
           }
         }
       },
