@@ -179,12 +179,22 @@
             "inline_ad_image": "shopify:\/\/shop_images\/smaller_gaby-yerden-3x2cFCoBeEQ-unsplash.png",
             "inline_ad_type": "two-ads-right"
           }
+        },
+        "dc533856-71f9-44a1-8d79-af5a93a80b90": {
+          "type": "product",
+          "settings": {
+            "product": "sipsmith-gin-750ml",
+            "product_title_alt": "Sipsmith Gin",
+            "product_image_alt": "shopify:\/\/shop_images\/Sipsmith-Gin.png",
+            "product_image_size": 100
+          }
         }
       },
       "block_order": [
         "16536635670b0cc719-1",
         "16536635670b0cc719-0",
-        "c763bd01-8d3c-4839-ad65-99c74048be01"
+        "c763bd01-8d3c-4839-ad65-99c74048be01",
+        "dc533856-71f9-44a1-8d79-af5a93a80b90"
       ],
       "settings": {
         "heading": "",
