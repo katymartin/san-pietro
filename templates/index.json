@@ -117,6 +117,7 @@
       ],
       "settings": {
         "color_scheme": "default",
+        "scroll_hint": "mobile-and-tablet-hint",
         "padding_top": 56,
         "padding_bottom": 28
       }
@@ -199,6 +200,7 @@
       ],
       "settings": {
         "color_scheme": "default",
+        "scroll_hint": "no-hint",
         "padding_top": 64,
         "padding_bottom": 0
       }
