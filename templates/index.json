@@ -62,8 +62,9 @@
         "16536193833ddca87c-0": {
           "type": "product",
           "settings": {
-            "product": "",
+            "product": "kim-crawford-sauvignon-blanc",
             "product_title_alt": "",
+            "product_image_alt": "shopify:\/\/shop_images\/kim-crawford-sauvignon-blanc.png",
             "product_image_size": 100
           }
         }
