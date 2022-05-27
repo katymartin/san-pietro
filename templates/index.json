@@ -77,20 +77,31 @@
             "product_image_size": 90
           }
         },
-        "d9411222-d6ff-4c84-a26d-5926e22ca5f0": {
-          "type": "inline-ad",
-          "settings": {
-            "inline_ad_headline": "Best Josh",
-            "inline_ad_link": "",
-            "inline_ad_image": "shopify:\/\/shop_images\/banner.jpg"
-          }
-        },
         "bccdb61d-59c1-4aa6-86eb-7859fda3e50d": {
           "type": "product",
           "settings": {
-            "product": "",
+            "product": "titos-handmade-vodka-750ml",
             "product_title_alt": "",
-            "product_image_size": 100
+            "product_image_alt": "shopify:\/\/shop_images\/titos.png",
+            "product_image_size": 90
+          }
+        },
+        "d09a93a9-c224-4bd3-9bd5-963deae087b4": {
+          "type": "product",
+          "settings": {
+            "product": "acacia-pinot-noir-carneros",
+            "product_title_alt": "",
+            "product_image_alt": "shopify:\/\/shop_images\/acacia.png",
+            "product_image_size": 90
+          }
+        },
+        "e429b401-b344-4884-b4c9-f4a0cde4f518": {
+          "type": "product",
+          "settings": {
+            "product": "veuve-cliquot-yellow-label-brut",
+            "product_title_alt": "",
+            "product_image_alt": "shopify:\/\/shop_images\/Veuve-Clicquot-Yellow-Label-bottle.png",
+            "product_image_size": 90
           }
         }
       },
@@ -98,8 +109,9 @@
         "16536193833ddca87c-1",
         "16536193833ddca87c-0",
         "035c0c53-5dd4-4dab-af00-35a9673b9b32",
-        "d9411222-d6ff-4c84-a26d-5926e22ca5f0",
-        "bccdb61d-59c1-4aa6-86eb-7859fda3e50d"
+        "bccdb61d-59c1-4aa6-86eb-7859fda3e50d",
+        "d09a93a9-c224-4bd3-9bd5-963deae087b4",
+        "e429b401-b344-4884-b4c9-f4a0cde4f518"
       ],
       "settings": {
         "heading": "",
