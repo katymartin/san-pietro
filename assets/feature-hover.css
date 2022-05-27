@@ -217,12 +217,12 @@
   margin: 0;
 }
 
-.color-default .inline-ad-headline {
+.color-default-headline .inline-ad-headline {
   background-color: rgb(var(--color-brand-2));
   color: rgb(var(--color-brand-6));
 }
 
-.color-inverse .inline-ad-headline {
+.color-inverse-headline .inline-ad-headline {
   background-color: rgb(var(--color-brand-6));
   color: rgb(var(--color-brand-2));
 }
