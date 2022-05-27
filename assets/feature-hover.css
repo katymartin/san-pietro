@@ -235,7 +235,7 @@
   right: 0;
   width: fit-content;
   margin-right: 30px;
-  top: 255px;
+  bottom: 0px;
   border-radius: 50px;
   padding: 0 10px;
 }
