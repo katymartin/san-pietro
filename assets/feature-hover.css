@@ -236,9 +236,18 @@
   width: fit-content;
   margin-right: 30px;
   top: 255px;
-  background-color: rgb(var(--color-brand-1));
   border-radius: 50px;
   padding: 0 10px;
+}
+
+.color-default .scroll-hint {
+  background-color: rgb(var(--color-brand-3));
+  color: rgb(var(--color-brand-5));
+}
+
+.color-inverse .scroll-hint {
+  background-color: rgb(var(--color-brand-5));
+  color: rgb(var(--color-brand-2));
 }
 
 @media screen and (min-width: 768px) {
