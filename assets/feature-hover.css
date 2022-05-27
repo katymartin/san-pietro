@@ -8,6 +8,7 @@
   justify-content: space-between;
   overflow-x: scroll;
   overflow-y: hidden;
+  position: relative;
 }
 
 .feature-hover::-webkit-scrollbar {
@@ -136,17 +137,41 @@
 }
 
 .inline-ad-wrapper {
-  width: calc(100% - 30px);
   flex-grow: 2;
+}
+
+.inline-ad-wrapper.only-ad {
+  width: calc(100% - 30px);
   margin: 0 15px;
-  min-width: 275px;
   position: absolute;
 }
 
+.inline-ad-wrapper.two-ads-left,
+.inline-ad-wrapper.two-ads-right {
+  width: calc(50% - 22px);
+  position: absolute;
+}
+
+.inline-ad-wrapper.two-ads-left {
+  margin: 0 7px 0 15px;
+  top: 0;
+  left: 0;
+}
+
+.inline-ad-wrapper.two-ads-right {
+  margin: 0 15px 0 7px;
+  top: 0;
+  right: 0;
+}
+
 @media screen and (min-width: 1020px) {
-  .inline-ad-wrapper {
+  .inline-ad-wrapper.only-ad,
+  .inline-ad-wrapper.two-ads-left,
+  .inline-ad-wrapper.two-ads-right {
+    width: calc(100% - 55px);
+    min-width: 300px;
     position: relative;
-    margin-left: 0;
+    margin-left: 15px;
     margin-right: 40px;
   }
 }
