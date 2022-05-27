@@ -171,15 +171,6 @@
             "product_image_size": 95
           }
         },
-        "549b403d-734b-4a83-8fbd-43221187f079": {
-          "type": "product",
-          "settings": {
-            "product": "19-crimes-shiraz",
-            "product_title_alt": "",
-            "product_image_alt": "shopify:\/\/shop_images\/the-little-sheep-of-france-rose.png",
-            "product_image_size": 95
-          }
-        },
         "c763bd01-8d3c-4839-ad65-99c74048be01": {
           "type": "inline-ad",
           "settings": {
@@ -203,7 +194,6 @@
       "block_order": [
         "16536635670b0cc719-1",
         "16536635670b0cc719-0",
-        "549b403d-734b-4a83-8fbd-43221187f079",
         "c763bd01-8d3c-4839-ad65-99c74048be01",
         "dc533856-71f9-44a1-8d79-af5a93a80b90"
       ],
