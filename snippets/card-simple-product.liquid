@@ -1,0 +1,66 @@
+{% comment %}
+    Renders a product card
+
+    Accepts:
+    - card_product: {Object} Product Liquid object (optional)
+    - media_aspect_ratio: {String} Size of the product image card. Values are "square" and "portrait". Default is "square" (optional)
+    - show_secondary_image: {Boolean} Show the secondary image on hover. Default: false (optional)
+    - show_vendor: {Boolean} Show the product vendor. Default: false
+    - show_rating: {Boolean} Show the product rating. Default: false
+    - extend_height: {Boolean} Card height extends to available container space. Default: true (optional)
+    - lazy_load: {Boolean} Image should be lazy loaded. Default: true (optional)
+    - show_quick_add: {Boolean} Show the quick add button.
+    - section_id: {String} The ID of the section that contains this card.
+
+    Usage:
+    {% render 'card-product', show_vendor: section.settings.show_vendor %}
+{% endcomment %}
+<div class="feature-hover__item">
+{%- if card_product and card_product != empty -%}
+  
+  {%- if product_image_alt -%}
+  <div class="hover-image-wrapper">
+    <a href="{{ card_product.url }}">
+    <img
+      srcset="{{ product_image_alt | image_url }}"
+      src="{{ card_product.featured_media | image_url: width: 533 }}"
+      sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
+      alt="{{ card_product.featured_media.alt | escape }}"
+      class="motion-reduce featured-bottle"
+      {% unless lazy_load == false %}loading="lazy"{% endunless %}
+      style="max-width: {{ product_image_size | append: "px" }};"
+      width="100%"
+    >
+    </a>
+    <div class="expanding-div"></div>
+  </div>
+  {%- endif -%}
+
+  
+  <div class="card-simple-info">
+    {%- if card_product.metafields.my_fields.custom_badging != blank -%}
+      <span class="badge custom--badge">{{ card_product.metafields.my_fields.custom_badging }}</span>
+    {%- elsif card_product.compare_at_price > card_product.price and card_product.available -%}
+      <span class="badge badge--bottom-left color-{{ settings.sale_badge_color_scheme }}">{{ 'products.product.on_sale' | t }}</span>
+    {%- endif -%}
+    
+    {%- if product_title_alt != empty -%}
+    <h2 class="card-simple-title">
+      <a href="{{ card_product.url }}">
+        {{ product_title_alt }}
+      </a>
+    </h2>
+    {%- else -%}
+    <h2 class="card-simple-title">
+      <a href="{{ card_product.url }}">
+        {{ card_product.title | escape }}
+      </a>
+    </h2>
+    {%- endif -%}
+    {{ card_product.price | money }}
+      
+    <a class="underlined-link" href="{{ card_product.url }}">Shop Now</a>
+  </div>
+
+{%- endif -%}
+</div>
