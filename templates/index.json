@@ -199,9 +199,9 @@
       "settings": {
         "heading": "",
         "heading_size": "h1",
-        "color_scheme": "background-1",
-        "padding_top": 56,
-        "padding_bottom": 56
+        "color_scheme": "background-2",
+        "padding_top": 64,
+        "padding_bottom": 64
       }
     },
     "featured-collection": {
