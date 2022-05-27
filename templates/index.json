@@ -67,11 +67,21 @@
             "product_image_alt": "shopify:\/\/shop_images\/kim-crawford-sauvignon-blanc.png",
             "product_image_size": 100
           }
+        },
+        "035c0c53-5dd4-4dab-af00-35a9673b9b32": {
+          "type": "product",
+          "settings": {
+            "product": "josh-cellars-cabernet-sauvignon",
+            "product_title_alt": "",
+            "product_image_alt": "shopify:\/\/shop_images\/josh-cabernet-sauvignon.png",
+            "product_image_size": 90
+          }
         }
       },
       "block_order": [
         "16536193833ddca87c-1",
-        "16536193833ddca87c-0"
+        "16536193833ddca87c-0",
+        "035c0c53-5dd4-4dab-af00-35a9673b9b32"
       ],
       "settings": {
         "heading": "",
