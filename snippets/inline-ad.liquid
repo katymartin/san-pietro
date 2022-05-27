@@ -24,7 +24,7 @@
         <h2 class="inline-ad-headline">{{ inline_ad_headline | escape }}</h2>
       </div>
     </a>
-  {%- elsif -%}
+  {%- else -%}
     <div class="inline-ad-image" style="background-image: url({{ inline_ad_image | image_url }}); ">
       <h2 class="inline-ad-headline">{{ inline_ad_headline | escape }}</h2>
     </div>
