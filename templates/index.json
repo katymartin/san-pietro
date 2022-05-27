@@ -35,11 +35,11 @@
         "62a44bfb-37ed-486f-a7eb-dcde20faf1e8"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/shop_1.jpg",
+        "image": "shopify:\/\/shop_images\/johny-goerend-pnigODapPek-unsplash.jpg",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "adapt_height_first_image": false,
-        "desktop_content_position": "bottom-left",
+        "desktop_content_position": "middle-center",
         "show_text_box": true,
         "desktop_content_alignment": "center",
         "color_scheme": "inverse",
@@ -171,7 +171,7 @@
         "button"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/sanPietro.jpg",
+        "image": "shopify:\/\/shop_images\/shop_1.jpg",
         "height": "large",
         "desktop_image_width": "large",
         "layout": "text_first",
@@ -204,12 +204,19 @@
           "settings": {
             "collection": "bourbon"
           }
+        },
+        "676e7b98-fa34-4d62-a435-c9de9f786d9e": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
         }
       },
       "block_order": [
         "collection-1",
         "collection-0",
-        "collection-2"
+        "collection-2",
+        "676e7b98-fa34-4d62-a435-c9de9f786d9e"
       ],
       "settings": {
         "title": "",
