@@ -40,6 +40,8 @@
               %}
           {%- endcase -%}
       {%- endfor -%}
+      
+      <p class="scroll-hint {{ section.settings.scroll_hint }}">Scroll {% render 'icon-arrow' %}</p>
     </div>
   </div>
 </div>
@@ -65,6 +67,30 @@
       ],
       "default": "default",
       "label": "Default"
+    },
+    {
+      "type": "select",
+      "id": "scroll_hint",
+      "options": [
+        {
+          "value": "no-hint",
+          "label": "No Scroll Hint"
+        },
+        {
+          "value": "mobile-only-hint",
+          "label": "Mobile Only Hint"
+        },
+        {
+          "value": "mobile-and-tablet-hint",
+          "label": "Mobile & Tablet Hint"
+        },
+        {
+          "value": "all-sizes-hint",
+          "label": "All Sizes Hint"
+        }
+      ],
+      "default": "no-hint",
+      "label": "No Scroll Hint"
     },
     {
       "type": "header",

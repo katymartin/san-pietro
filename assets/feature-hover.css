@@ -12,6 +12,7 @@
   overflow-y: hidden;
 }
 
+
 .feature-hover::-webkit-scrollbar,
 .feature-hover::-webkit-scrollbar-thumb {
   height: 4px;
@@ -19,16 +20,14 @@
   margin: 0 15px;
 }
 
-.color-default .feature-hover::-webkit-scrollbar-track {
+.color-default .feature-hover::-webkit-scrollbar-track,
+.color-default .feature-hover::-webkit-scrollbar-thumb {
   background: rgb(var(--color-brand-2));
 }
 
-.color-inverse .feature-hover::-webkit-scrollbar-track {
+.color-inverse .feature-hover::-webkit-scrollbar-track,
+.color-inverse .feature-hover::-webkit-scrollbar-thumb {
   background: rgb(var(--color-brand-6));
-}
-
-.feature-hover::-webkit-scrollbar-thumb {
-  background: rgb(var(--color-brand-5));
 }
 
 .feature-hover__item {
@@ -219,4 +218,43 @@
 .color-inverse-headline .inline-ad-headline {
   background-color: rgb(var(--color-brand-6));
   color: rgb(var(--color-brand-2));
+}
+
+.scroll-hint.no-hint {
+  display: none;
+}
+
+.scroll-hint.mobile-only-hint,
+.scroll-hint.mobile-and-tablet-hint,
+.scroll-hint.all-sizes-hint {
+  display: block;
+}
+
+.scroll-hint {
+  position: absolute;
+  right: 0;
+  width: fit-content;
+  margin-right: 30px;
+  top: 255px;
+  background-color: rgb(var(--color-brand-1));
+  border-radius: 50px;
+  padding: 0 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .scroll-hint.mobile-only-hint {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  .scroll-hint {
+    top: 10px;
+  }
+}
+
+@media screen and (min-width: 1350px) {
+  .scroll-hint.mobile-and-tablet-hint {
+    display: none;
+  }
 }
