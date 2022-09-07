@@ -72,6 +72,80 @@
         "padding_bottom": 60
       }
     },
+    "16536193836b610bba": {
+      "type": "feature-hover",
+      "blocks": {
+        "16536193833ddca87c-1": {
+          "type": "inline-ad",
+          "settings": {
+            "color_scheme_headline": "inverse-headline",
+            "inline_ad_headline": "Customer Favorites",
+            "inline_ad_link": "",
+            "inline_ad_image": "shopify:\/\/shop_images\/liquer.jpg",
+            "inline_ad_type": "only-ad"
+          }
+        },
+        "16536193833ddca87c-0": {
+          "type": "product",
+          "settings": {
+            "product": "kim-crawford-sauvignon-blanc",
+            "product_title_alt": "",
+            "product_image_alt": "shopify:\/\/shop_images\/kim-crawford-sauvignon-blanc.png",
+            "product_image_size": 95
+          }
+        },
+        "035c0c53-5dd4-4dab-af00-35a9673b9b32": {
+          "type": "product",
+          "settings": {
+            "product": "josh-cellars-cabernet-sauvignon",
+            "product_title_alt": "",
+            "product_image_alt": "shopify:\/\/shop_images\/josh-cabernet-sauvignon.png",
+            "product_image_size": 85
+          }
+        },
+        "bccdb61d-59c1-4aa6-86eb-7859fda3e50d": {
+          "type": "product",
+          "settings": {
+            "product": "titos-handmade-vodka-750ml",
+            "product_title_alt": "Titos' Handmade Vodka",
+            "product_image_alt": "shopify:\/\/shop_images\/titos.png",
+            "product_image_size": 85
+          }
+        },
+        "d09a93a9-c224-4bd3-9bd5-963deae087b4": {
+          "type": "product",
+          "settings": {
+            "product": "acacia-pinot-noir-carneros",
+            "product_title_alt": "",
+            "product_image_alt": "shopify:\/\/shop_images\/acacia.png",
+            "product_image_size": 90
+          }
+        },
+        "e429b401-b344-4884-b4c9-f4a0cde4f518": {
+          "type": "product",
+          "settings": {
+            "product": "veuve-cliquot-yellow-label-brut",
+            "product_title_alt": "",
+            "product_image_alt": "shopify:\/\/shop_images\/Veuve-Clicquot-Yellow-Label-bottle.png",
+            "product_image_size": 90
+          }
+        }
+      },
+      "block_order": [
+        "16536193833ddca87c-1",
+        "16536193833ddca87c-0",
+        "035c0c53-5dd4-4dab-af00-35a9673b9b32",
+        "bccdb61d-59c1-4aa6-86eb-7859fda3e50d",
+        "d09a93a9-c224-4bd3-9bd5-963deae087b4",
+        "e429b401-b344-4884-b4c9-f4a0cde4f518"
+      ],
+      "settings": {
+        "color_scheme": "default",
+        "scroll_hint": "mobile-and-tablet-hint",
+        "padding_top": 56,
+        "padding_bottom": 28
+      }
+    },
     "collection-list": {
       "type": "collection-list",
       "blocks": {
@@ -196,82 +270,9 @@
         "show_text_below": true
       }
     },
-    "16536193836b610bba": {
-      "type": "feature-hover",
-      "blocks": {
-        "16536193833ddca87c-1": {
-          "type": "inline-ad",
-          "settings": {
-            "color_scheme_headline": "inverse-headline",
-            "inline_ad_headline": "Most Popular",
-            "inline_ad_link": "",
-            "inline_ad_image": "shopify:\/\/shop_images\/ash.jpg",
-            "inline_ad_type": "only-ad"
-          }
-        },
-        "16536193833ddca87c-0": {
-          "type": "product",
-          "settings": {
-            "product": "kim-crawford-sauvignon-blanc",
-            "product_title_alt": "",
-            "product_image_alt": "shopify:\/\/shop_images\/kim-crawford-sauvignon-blanc.png",
-            "product_image_size": 95
-          }
-        },
-        "035c0c53-5dd4-4dab-af00-35a9673b9b32": {
-          "type": "product",
-          "settings": {
-            "product": "josh-cellars-cabernet-sauvignon",
-            "product_title_alt": "",
-            "product_image_alt": "shopify:\/\/shop_images\/josh-cabernet-sauvignon.png",
-            "product_image_size": 85
-          }
-        },
-        "bccdb61d-59c1-4aa6-86eb-7859fda3e50d": {
-          "type": "product",
-          "settings": {
-            "product": "titos-handmade-vodka-750ml",
-            "product_title_alt": "Titos' Handmade Vodka",
-            "product_image_alt": "shopify:\/\/shop_images\/titos.png",
-            "product_image_size": 85
-          }
-        },
-        "d09a93a9-c224-4bd3-9bd5-963deae087b4": {
-          "type": "product",
-          "settings": {
-            "product": "acacia-pinot-noir-carneros",
-            "product_title_alt": "",
-            "product_image_alt": "shopify:\/\/shop_images\/acacia.png",
-            "product_image_size": 90
-          }
-        },
-        "e429b401-b344-4884-b4c9-f4a0cde4f518": {
-          "type": "product",
-          "settings": {
-            "product": "veuve-cliquot-yellow-label-brut",
-            "product_title_alt": "",
-            "product_image_alt": "shopify:\/\/shop_images\/Veuve-Clicquot-Yellow-Label-bottle.png",
-            "product_image_size": 90
-          }
-        }
-      },
-      "block_order": [
-        "16536193833ddca87c-1",
-        "16536193833ddca87c-0",
-        "035c0c53-5dd4-4dab-af00-35a9673b9b32",
-        "bccdb61d-59c1-4aa6-86eb-7859fda3e50d",
-        "d09a93a9-c224-4bd3-9bd5-963deae087b4",
-        "e429b401-b344-4884-b4c9-f4a0cde4f518"
-      ],
-      "settings": {
-        "color_scheme": "default",
-        "scroll_hint": "mobile-and-tablet-hint",
-        "padding_top": 56,
-        "padding_bottom": 28
-      }
-    },
     "165366356785fa2356": {
       "type": "feature-hover",
+      "disabled": true,
       "blocks": {
         "16536635670b0cc719-1": {
           "type": "inline-ad",
@@ -328,7 +329,7 @@
     "featured-collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Popular Right Now",
+        "title": "Best Sellers",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
@@ -356,9 +357,9 @@
   "order": [
     "rich-text",
     "image-with-text",
+    "16536193836b610bba",
     "collection-list",
     "16509101518f096d1b",
-    "16536193836b610bba",
     "165366356785fa2356",
     "featured-collection"
   ]
