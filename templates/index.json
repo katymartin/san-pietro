@@ -1,5 +1,26 @@
 {
   "sections": {
+    "rich-text": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Welcome to our new site!",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "heading"
+      ],
+      "settings": {
+        "color_scheme": "accent-2",
+        "full_width": true,
+        "padding_top": 52,
+        "padding_bottom": 52
+      }
+    },
     "image-with-text": {
       "type": "image-with-text",
       "blocks": {
@@ -167,34 +188,6 @@
         "padding_bottom": 28
       }
     },
-    "rich-text": {
-      "type": "rich-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Get 10% off when you buy 6 or more bottles of wine!",
-            "heading_size": "h0"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Discount will be automatically applied. Wine items only.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text"
-      ],
-      "settings": {
-        "color_scheme": "accent-1",
-        "full_width": true,
-        "padding_top": 52,
-        "padding_bottom": 52
-      }
-    },
     "165366356785fa2356": {
       "type": "feature-hover",
       "blocks": {
@@ -356,10 +349,10 @@
     }
   },
   "order": [
+    "rich-text",
     "image-with-text",
     "16509101518f096d1b",
     "16536193836b610bba",
-    "rich-text",
     "165366356785fa2356",
     "featured-collection",
     "collage",
