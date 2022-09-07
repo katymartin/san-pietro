@@ -90,7 +90,13 @@
         "collection-2": {
           "type": "featured_collection",
           "settings": {
-            "collection": "bourbon"
+            "collection": "tequila"
+          }
+        },
+        "9f066d9f-3872-42e3-baa8-69edd1f29c80": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "gin"
           }
         },
         "b122b7db-7105-4d2a-8dd4-f97f3e6ef671": {
@@ -110,27 +116,35 @@
           "settings": {
             "collection": "sparkling-1"
           }
+        },
+        "765628f3-ca9f-4a79-9c5c-0409c217c76e": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "wine-between-10-20"
+          }
         }
       },
       "block_order": [
         "collection-1",
         "collection-0",
         "collection-2",
+        "9f066d9f-3872-42e3-baa8-69edd1f29c80",
         "b122b7db-7105-4d2a-8dd4-f97f3e6ef671",
         "068125b1-8b8a-4a1e-bc7b-2a810ccabe57",
-        "4227db00-3ade-404f-9663-ad4b9ea9f2d4"
+        "4227db00-3ade-404f-9663-ad4b9ea9f2d4",
+        "765628f3-ca9f-4a79-9c5c-0409c217c76e"
       ],
       "settings": {
-        "title": "",
+        "title": "Top Categories",
         "heading_size": "h2",
         "image_ratio": "square",
-        "columns_desktop": 3,
+        "columns_desktop": 4,
         "color_scheme": "accent-2",
         "show_view_all": false,
         "columns_mobile": "1",
         "swipe_on_mobile": true,
-        "padding_top": 28,
-        "padding_bottom": 24
+        "padding_top": 60,
+        "padding_bottom": 60
       }
     },
     "16509101518f096d1b": {
