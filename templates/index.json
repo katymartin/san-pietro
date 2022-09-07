@@ -1,7 +1,52 @@
 {
   "sections": {
+    "image-with-text": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Same Day Local Delivery Available:",
+            "heading_size": "h2"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>• Tuckahoe<\/p><p>• Bronxville<\/p><p>• Mt Vernon<\/p><p><\/p><p>Delivery hours are noon - 8pm daily, noon - 4pm Sundays.<\/p>",
+            "text_style": "subtitle"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop All",
+            "button_link": "shopify:\/\/collections"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "button"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/MainBanner.jpg",
+        "height": "large",
+        "desktop_image_width": "large",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "overlap",
+        "color_scheme": "accent-2",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "16509101518f096d1b": {
       "type": "image-banner",
+      "disabled": true,
       "blocks": {
         "1650910151f268c5f4-0": {
           "type": "heading",
@@ -269,50 +314,6 @@
         "padding_bottom": 16
       }
     },
-    "image-with-text": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Same Day Local Delivery Available:",
-            "heading_size": "h2"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>• Tuckahoe<\/p><p>• Bronxville<\/p><p>• Mt Vernon<\/p><p><\/p><p>Delivery hours are noon - 8pm daily, noon - 4pm Sundays.<\/p>",
-            "text_style": "subtitle"
-          }
-        },
-        "button": {
-          "type": "button",
-          "settings": {
-            "button_label": "Shop All",
-            "button_link": "shopify:\/\/collections"
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text",
-        "button"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/shop_1.jpg",
-        "height": "large",
-        "desktop_image_width": "large",
-        "layout": "text_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "content_layout": "overlap",
-        "color_scheme": "background-2",
-        "mobile_content_alignment": "left",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "collection-list": {
       "type": "collection-list",
       "blocks": {
@@ -355,13 +356,13 @@
     }
   },
   "order": [
+    "image-with-text",
     "16509101518f096d1b",
     "16536193836b610bba",
     "rich-text",
     "165366356785fa2356",
     "featured-collection",
     "collage",
-    "image-with-text",
     "collection-list"
   ]
 }
