@@ -6,17 +6,24 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Welcome to our new site!",
+            "heading": "Welcome to our new online store!",
             "heading_size": "h2"
+          }
+        },
+        "cbc12c44-c02e-440c-b55a-9f6fe67043f6": {
+          "type": "text",
+          "settings": {
+            "text": "<p>You can now order directly from us to avoid additional fees while enjoying the same timely delivery right to your door. For a limited time, get FREE delivery.<\/p>"
           }
         }
       },
       "block_order": [
-        "heading"
+        "heading",
+        "cbc12c44-c02e-440c-b55a-9f6fe67043f6"
       ],
       "settings": {
         "color_scheme": "accent-2",
-        "full_width": true,
+        "full_width": false,
         "padding_top": 52,
         "padding_bottom": 52
       }
@@ -59,7 +66,7 @@
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
         "content_layout": "overlap",
-        "color_scheme": "accent-2",
+        "color_scheme": "background-2",
         "mobile_content_alignment": "left",
         "padding_top": 0,
         "padding_bottom": 0
