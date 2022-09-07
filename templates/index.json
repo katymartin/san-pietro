@@ -78,7 +78,7 @@
         "16536193833ddca87c-1": {
           "type": "inline-ad",
           "settings": {
-            "color_scheme_headline": "inverse-headline",
+            "color_scheme_headline": "default-headline",
             "inline_ad_headline": "Customer Favorites",
             "inline_ad_link": "",
             "inline_ad_image": "shopify:\/\/shop_images\/liquer.jpg",
