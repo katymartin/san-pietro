@@ -160,10 +160,10 @@
               "alignment": "center"
             }
           },
-          "text-0": {
+          "b0fe6d9c-b57d-4c7d-bd1a-44c6e19ae12c": {
             "type": "text",
             "settings": {
-              "heading": "Our Store",
+              "heading": "Heading",
               "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
             }
           }
@@ -171,11 +171,11 @@
         "block_order": [
           "linklist",
           "image",
-          "text-0"
+          "b0fe6d9c-b57d-4c7d-bd1a-44c6e19ae12c"
         ],
         "settings": {
           "color_scheme": "background-2",
-          "newsletter_enable": false,
+          "newsletter_enable": true,
           "newsletter_heading": "Subscribe to our emails",
           "show_social": true,
           "enable_country_selector": false,
