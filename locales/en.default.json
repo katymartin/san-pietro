@@ -422,5 +422,21 @@
       "copy_code_success": "Code copied successfully",
       "print_gift_card": "Print"
     }
+  },
+  "shopify": {
+    "checkout": {
+      "general": {
+        "continue_to_shipping_method": "Continue to Delivery Method",
+        "back_to_shipping_method": "Return to Delivery Method",
+        "choose_shipping_method": "Choose a Delivery Method"
+      },
+      "contact": {
+        "shipping_address_title": "Delivery Address"
+      },
+      "delivery_options": {
+        "ship": "Local Delivery",
+        "shipping_address": "Delivery Address"
+      }
+    }
   }
 }
